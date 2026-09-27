@@ -2,9 +2,9 @@
 <manifest>
 
 <!-- Device Sources -->
-<project name="topnotchfreaks/android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="github" revision="17-new" />
-<project name="topnotchfreaks/proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="github" revision="16" />
-<project name="topnotchfreaks/android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="github" revision="16-gki" />
+<project name="topnotchfreaks/android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="github" revision="calcite" />
+<project name="topnotchfreaks/proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="github" revision="16-new" />
+<project name="topnotchfreaks/android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="github" revision="16-newfw" />
 
 <!-- LOS Hardware Stuff -->
 <project name="topnotchfreaks/android_hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="lineage-23.2" />
