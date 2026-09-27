@@ -36,7 +36,7 @@ PRODUCT_MAKEFILES += \
     $(LOCAL_DIR)/spes/aospa_spes.mk \
     $(LOCAL_DIR)/sunny/aospa_sunny.mk \
     $(LOCAL_DIR)/surya/aospa_surya.mk \
-    $(LOCAL_DIR)/surya/aospa_tapas.mk
+    $(LOCAL_DIR)/tapas/aospa_tapas.mk
 
 # Lunch targets
 COMMON_LUNCH_CHOICES += \
