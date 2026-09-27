@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote name="tnf" fetch="https://github.com/topnotchfreaks" />
-    
 <!-- Device Sources -->
-<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="17-new" />
-<project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="tnf" revision="16" />
-<project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="tnf" revision="16-gki" />
+<project name="topnotchfreaks/android_device_xiaomi_tapas" path="device/xiaomi/tapas" revision="17-new" />
+<project name="topnotchfreaks/proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" revision="16" />
+<project name="topnotchfreaks/android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" revision="16-gki" />
 
 <!-- LOS Hardware Stuff -->
-<project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="tnf" revision="lineage-23.2" />
+<project name="topnotchfreaks/android_hardware_xiaomi" path="hardware/xiaomi" revision="lineage-23.2" />
 <remove-project path="hardware/qcom-caf/common" />
-<project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="tnf" revision="16" >
+
+<project path="hardware/qcom-caf/common"
+         name="topnotchfreaks/hardware_qcom-caf_common"
+         groups="qcom"
+         revision="16">
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+
     <!-- add guards for CAF repositories -->
     <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
@@ -34,7 +37,7 @@
     <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
     <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450-6.6/audio/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450-6.6//Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450-6.6/Android.bp" />
     <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
     <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
@@ -47,26 +50,58 @@
     <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm6225/audio/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm6225/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm6225/Android.mk" />
-  </project>
-    
+</project>
+
 <!-- SE-Policy Stuff -->
-<project name="device_xiaomi_sepolicy" path="device/xiaomi/sepolicy" remote="tnf" revision="16" />
-<project name="android_device_qcom_sepolicy_vndr_sm6225" path="device/qcom/sepolicy_vndr/sm6225" remote="tnf" revision="lineage-24.0" />
+<project name="topnotchfreaks/device_xiaomi_sepolicy"
+         path="device/xiaomi/sepolicy"
+         revision="16" />
+
+<project name="topnotchfreaks/android_device_qcom_sepolicy_vndr_sm6225"
+         path="device/qcom/sepolicy_vndr/sm6225"
+         revision="lineage-24.0" />
 
 <!-- HALS -->
-<project path="hardware/qcom-caf/sm6225/audio/agm" name="android_hardware_qcom-caf_sm6225_audio_agm" remote="tnf" revision="16.2" />
-<project path="hardware/qcom-caf/sm6225/audio/pal" name="android_hardware_qcom-caf_sm6225_audio_pal" remote="tnf" revision="16.2" />
-<project path="hardware/qcom-caf/sm6225/audio/primary-hal" name="android_hardware_qcom-caf_sm6225_audio_primary-hal" remote="tnf" revision="16.2" />
-<project path="hardware/qcom-caf/sm6225/dataipa" name="android_hardware_qcom-caf_sm6225_dataipa" remote="tnf" revision="16.2" />
-<project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" name="android_hardware_qcom-caf_sm6225_data-ipa-cfg-mgr" remote="tnf" revision="16.2" />
-<project path="hardware/qcom-caf/sm6225/display" name="android_hardware_qcom-caf_sm6225_display" remote="tnf" revision="16.2" />
-<project path="hardware/qcom-caf/sm6225/media" name="android_hardware_qcom-caf_sm6225_media" remote="tnf" revision="16.2" />
+<project path="hardware/qcom-caf/sm6225/audio/agm"
+         name="topnotchfreaks/android_hardware_qcom-caf_sm6225_audio_agm"
+         revision="16.2" />
+
+<project path="hardware/qcom-caf/sm6225/audio/pal"
+         name="topnotchfreaks/android_hardware_qcom-caf_sm6225_audio_pal"
+         revision="16.2" />
+
+<project path="hardware/qcom-caf/sm6225/audio/primary-hal"
+         name="topnotchfreaks/android_hardware_qcom-caf_sm6225_audio_primary-hal"
+         revision="16.2" />
+
+<project path="hardware/qcom-caf/sm6225/dataipa"
+         name="topnotchfreaks/android_hardware_qcom-caf_sm6225_dataipa"
+         revision="16.2" />
+
+<project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr"
+         name="topnotchfreaks/android_hardware_qcom-caf_sm6225_data-ipa-cfg-mgr"
+         revision="16.2" />
+
+<project path="hardware/qcom-caf/sm6225/display"
+         name="topnotchfreaks/android_hardware_qcom-caf_sm6225_display"
+         revision="16.2" />
+
+<project path="hardware/qcom-caf/sm6225/media"
+         name="topnotchfreaks/android_hardware_qcom-caf_sm6225_media"
+         revision="16.2" />
 
 <!-- Dolby & MiCam -->
-<project path="hardware/dolby" name="android_hardware_dolby" remote="tnf" revision="lunaris" />
-<project path="packages/apps/LunarisDolby" name="android_packages_apps_LunarisDolby" remote="tnf" revision="16.0" />
+<project path="hardware/dolby"
+         name="topnotchfreaks/android_hardware_dolby"
+         revision="lunaris" />
+
+<project path="packages/apps/LunarisDolby"
+         name="topnotchfreaks/android_packages_apps_LunarisDolby"
+         revision="16.0" />
 
 <!-- Lineage Priv Keys -->
-<project name="android_vendor_lineage-priv_keys" path="vendor/aospa-priv/keys" remote="tnf" revision="lineage-23.2" />
-    
+<project name="topnotchfreaks/android_vendor_lineage-priv_keys"
+         path="vendor/aospa-priv/keys"
+         revision="lineage-23.2" />
+
 </manifest>
