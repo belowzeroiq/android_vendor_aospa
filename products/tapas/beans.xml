@@ -2,7 +2,7 @@
 <manifest>
 
 <!-- Device Sources -->
-<project name="topnotchfreaks/android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="github" revision="calcite" />
+<project name="topnotchfreaks/android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="github" revision="penguin-17" />
 <project name="topnotchfreaks/proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="github" revision="16-new" />
 <project name="topnotchfreaks/android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="github" revision="16-newfw" />
 
@@ -54,67 +54,23 @@
 </project>
 
 <!-- SE-Policy Stuff -->
-<project name="topnotchfreaks/device_xiaomi_sepolicy"
-         path="device/xiaomi/sepolicy"
-         remote="github"
-         revision="16" />
-
-<project name="topnotchfreaks/android_device_qcom_sepolicy_vndr_sm6225"
-         path="device/qcom/sepolicy_vndr/sm6225"
-         remote="github"
-         revision="lineage-24.0" />
+<project name="topnotchfreaks/device_xiaomi_sepolicy" path="device/xiaomi/sepolicy" remote="github" revision="16" />
+<project name="topnotchfreaks/android_device_qcom_sepolicy_vndr_sm6225" path="device/qcom/sepolicy_vndr/sm6225" remote="github" revision="lineage-24.0" />
 
 <!-- HALS -->
-<project path="hardware/qcom-caf/sm6225/audio/agm"
-         name="topnotchfreaks/android_hardware_qcom-caf_sm6225_audio_agm"
-         remote="github"
-         revision="16.2" />
-
-<project path="hardware/qcom-caf/sm6225/audio/pal"
-         name="topnotchfreaks/android_hardware_qcom-caf_sm6225_audio_pal"
-         remote="github"
-         revision="16.2" />
-
-<project path="hardware/qcom-caf/sm6225/audio/primary-hal"
-         name="topnotchfreaks/android_hardware_qcom-caf_sm6225_audio_primary-hal"
-         remote="github"
-         revision="16.2" />
-
-<project path="hardware/qcom-caf/sm6225/dataipa"
-         name="topnotchfreaks/android_hardware_qcom-caf_sm6225_dataipa"
-         remote="github"
-         revision="16.2" />
-
-<project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr"
-         name="topnotchfreaks/android_hardware_qcom-caf_sm6225_data-ipa-cfg-mgr"
-         remote="github"
-         revision="16.2" />
-
-<project path="hardware/qcom-caf/sm6225/display"
-         name="topnotchfreaks/android_hardware_qcom-caf_sm6225_display"
-         remote="github"
-         revision="16.2" />
-
-<project path="hardware/qcom-caf/sm6225/media"
-         name="topnotchfreaks/android_hardware_qcom-caf_sm6225_media"
-         remote="github"
-         revision="16.2" />
+<project path="hardware/qcom-caf/sm6225/audio/agm" name="topnotchfreaks/android_hardware_qcom-caf_sm6225_audio_agm" remote="github" revision="16.2" />
+<project path="hardware/qcom-caf/sm6225/audio/pal" name="topnotchfreaks/android_hardware_qcom-caf_sm6225_audio_pal" remote="github" revision="16.2" />
+<project path="hardware/qcom-caf/sm6225/audio/primary-hal" name="topnotchfreaks/android_hardware_qcom-caf_sm6225_audio_primary-hal" remote="github" revision="16.2" />
+<project path="hardware/qcom-caf/sm6225/dataipa" name="topnotchfreaks/android_hardware_qcom-caf_sm6225_dataipa" remote="github" revision="16.2" />
+<project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" name="topnotchfreaks/android_hardware_qcom-caf_sm6225_data-ipa-cfg-mgr" remote="github" revision="16.2" />
+<project path="hardware/qcom-caf/sm6225/display" name="topnotchfreaks/android_hardware_qcom-caf_sm6225_display" remote="github" revision="16.2" />
+<project path="hardware/qcom-caf/sm6225/media" name="topnotchfreaks/android_hardware_qcom-caf_sm6225_media" remote="github" revision="16.2" />
 
 <!-- Dolby & MiCam -->
-<project path="hardware/dolby"
-         name="topnotchfreaks/android_hardware_dolby"
-         remote="github"
-         revision="lunaris" />
-
-<project path="packages/apps/LunarisDolby"
-         name="topnotchfreaks/android_packages_apps_LunarisDolby"
-         remote="github"
-         revision="16.0" />
+<project path="hardware/dolby" name="topnotchfreaks/android_hardware_dolby" remote="github" revision="lunaris" />
+<project path="packages/apps/LunarisDolby" name="topnotchfreaks/android_packages_apps_LunarisDolby" remote="github" revision="16.0" />
 
 <!-- Lineage Priv Keys -->
-<project name="topnotchfreaks/android_vendor_lineage-priv_keys"
-         path="vendor/aospa-priv/keys"
-         remote="github"
-         revision="lineage-23.2" />
+<project name="topnotchfreaks/android_vendor_lineage-priv_keys" path="vendor/aospa-priv/keys" remote="github" revision="lineage-23.2" />
 
 </manifest>
